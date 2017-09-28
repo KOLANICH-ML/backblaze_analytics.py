@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=61.2.0", "setuptools_scm[toml]>=3.4.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "backblaze_analytics"
+authors = [{name = "KOLANICH"}]
+description = "Scripts to analyse BackBlaze dataset of HDD data"
+readme = "ReadMe.md"
+keywords = ["HDD", "reliability", "statistics", "BackBlaze", "dataset", "S.M.A.R.T.", "survivabilty", "kaplan-meier", "cox"]
+license = {text = "Unlicense"}
+classifiers = [
+	"Programming Language :: Python",
+	"Programming Language :: Python :: 3",
+	"Development Status :: 4 - Beta",
+	"Environment :: Other Environment",
+	"Intended Audience :: Developers",
+	"License :: Public Domain",
+	"Operating System :: OS Independent",
+]
+dependencies = [
+	"AutoXGBoost", # @ git+https://codeberg.org/KOLANICH-ML/AutoXGBoost.py.git
+	"HDDModelDecoder", # @ git+https://codeberg.org/KOLANICH-ML/HDDModelDecoder.py.git
+	"NoSuspend", # @ git+https://codeberg.org/KOLANICH-libs/NoSuspend.py.git
+	"lazily", # @ git+https://codeberg.org/KOLANICH-libs/lazily.py.git
+	"plumbum", # @ git+https://github.com/tomerfiliba/plumbum.git
+	"lifelines", # @ git+https://github.com/CamDavidsonPilon/lifelines.git
+	"tqdm", # @ git+https://github.com/tqdm/tqdm.git
+	"requests", # @ git+https://github.com/psf/requests.git
+	"pandas",
+	"beautifulsoup4",
+	"psutil",
+	"lazy_object_proxy",
+]
+dynamic = ["version"]
+
+[project.urls]
+Homepage = "https://codeberg.org/KOLANICH-ML/backblaze_analytics.py"
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+include = [
+	"backblaze_analytics",
+	"backblaze_analytics.*",
+]
+namespaces = false
+
+[tool.setuptools_scm]

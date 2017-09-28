@@ -1,0 +1,32 @@
+{
+	"weibullRho": {
+		"colsample_bytree": 0.6828048495,
+		"learning_rate": 0.42684305980000004,
+		"max_depth": 30,
+		"min_child_weight": 0.32815191850000003,
+		"min_split_loss": 51.7480986643,
+		"reg_alpha": 0.7074731166,
+		"subsample": 0.9618580591,
+		"num_boost_round": 10
+	},
+	"weibullLambda": {
+		"colsample_bytree": 0.9728082548,
+		"learning_rate": 0.4427109504,
+		"max_depth": 40,
+		"min_child_weight": 0.7136331871,
+		"min_split_loss": 56.3966501292,
+		"reg_alpha": 10.8528469236,
+		"subsample": 0.9987813205,
+		"num_boost_round": 10
+	},
+	"duration_worked_prep": {
+		"colsample_bytree": 0.997914582,
+		"learning_rate": 0.13490105100000002,
+		"max_depth": 39,
+		"min_child_weight": 2.2415731924,
+		"min_split_loss": 4.1864322544,
+		"reg_alpha": 0.0015000075,
+		"subsample": 0.9893104041,
+		"num_boost_round": 1
+	}
+}
